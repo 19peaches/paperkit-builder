@@ -1,2 +1,2 @@
 # paperkit-builder
-A laravel/elixir based build environment for timecreative/paper-kit. 
+A laravel/elixir based build environment for timcreative/paper-kit. 
