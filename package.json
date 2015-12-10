@@ -1,0 +1,32 @@
+{
+  "name": "paperkit-builder",
+  "version": "1.0.0",
+  "description": "A laravel-elixir build environment for timcreative/paper-kit.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19peaches/paperkit-builder.git"
+  },
+  "author": "Vince Kronlein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/19peaches/paperkit-builder/issues"
+  },
+  "homepage": "https://github.com/19peaches/paperkit-builder#readme",
+  "devDependencies": {
+    "laravel-elixir": "^4.0.4",
+    "jquery": "git@github.com:jquery/jquery.git#2.1.4",
+    "jquery-ui": "git@github.com:jquery/jquery-ui.git#1.11.4",
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "napa": "^2.0.2"
+  },
+  "napa-config": {
+    "cache": false
+  },
+  "scripts": {
+    "install": "napa timcreative/paper-kit",
+    "postinstall": "cd ./node_modules/jquery-ui && npm install && grunt default sizer"
+  }
+}
